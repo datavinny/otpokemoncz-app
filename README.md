@@ -1,5 +1,5 @@
 # 🚧 README em construção 🚧
-#otPokemon CZ
+# otPokemon CZ
 ## 📝 Introdução
 
 Site criado para o fan game de pokemon, otPokemon CZ.
