@@ -26,7 +26,7 @@ function Login() {
     const user = JSON.parse(localStorage.getItem(USERKEY));
 
     if (user) navigate('/news');
-  }, []);
+  }, [navigate]);
 
   useEffect(() => {
     const { username, password } = data;
