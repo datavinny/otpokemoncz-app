@@ -1,0 +1,25 @@
+import React, { useState, useMemo, useEffect } from 'react';
+import PropTypes from 'prop-types';
+import MyContext from '../context/MyContext';
+
+export default function Provider({ children }) {
+  const [points, setPoints] = useState([]);
+
+  const context = useMemo(() => {
+
+    return ({
+      points,
+      setPoints,
+    });
+  }, [points]);
+
+  return (
+    <MyContext.Provider value={ context }>
+      {children}
+    </MyContext.Provider>
+  );
+}
+
+Provider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
