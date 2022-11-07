@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/otpokemoncz-app/static/css/main.e6c13ad2.css",
-    "main.js": "/otpokemoncz-app/static/js/main.20247931.js",
+    "main.js": "/otpokemoncz-app/static/js/main.a1be2df2.js",
     "static/js/787.01e8bc5a.chunk.js": "/otpokemoncz-app/static/js/787.01e8bc5a.chunk.js",
     "static/media/Logo.png": "/otpokemoncz-app/static/media/Logo.11012dfdc20912a1a39b.png",
     "index.html": "/otpokemoncz-app/index.html",
     "main.e6c13ad2.css.map": "/otpokemoncz-app/static/css/main.e6c13ad2.css.map",
-    "main.20247931.js.map": "/otpokemoncz-app/static/js/main.20247931.js.map",
+    "main.a1be2df2.js.map": "/otpokemoncz-app/static/js/main.a1be2df2.js.map",
     "787.01e8bc5a.chunk.js.map": "/otpokemoncz-app/static/js/787.01e8bc5a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.20247931.js"
+    "static/js/main.a1be2df2.js"
   ]
 }
