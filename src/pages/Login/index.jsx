@@ -13,7 +13,7 @@ function Login() {
     password: '',
   });
 
-  const [failedServerConnection, setFailedServerConnection] = useState(false);
+  // const [failedServerConnection, setFailedServerConnection] = useState(false);
   const [isBtnDisabled, setBtnDisabled] = useState(true);
 
   const navigate = useNavigate();
@@ -96,8 +96,7 @@ function Login() {
           Ainda não tenho conta
         </S.ButtonRegister>
       </S.Forms>
-
-      {
+      {/* {
         (failedServerConnection)
           && (
             <S.FailLogin>
@@ -105,7 +104,7 @@ function Login() {
               Por favor, tente novamente.
             </S.FailLogin>
           )
-      }
+      } */}
     </S.Container>
   );
 }
