@@ -56,9 +56,9 @@ function Login() {
   return (
     <S.Container>
       <S.Image>
-        <img src={ logo } width={ 100 } alt="Logo" />
+        <img src={ logo } width={ 300 } alt="Logo" />
       </S.Image>
-      <S.Title>otPokemon CZ</S.Title>
+      <S.Title>De fans para fans.</S.Title>
       <S.Forms>
         <S.Label htmlFor="input-username">
           Login
