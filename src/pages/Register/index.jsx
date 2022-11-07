@@ -14,7 +14,7 @@ function Register() {
   });
   const [isBtnDisabled, setBtnDisabled] = useState(true);
   const [failedTryLogin, setFailedTryLogin] = useState(false);
-  const [failedServerConnection, setFailedServerConnection] = useState(false);
+  // const [failedServerConnection, setFailedServerConnection] = useState(false);
 
   const navigate = useNavigate();
 
@@ -108,7 +108,7 @@ function Register() {
             </S.Validation>
           )
       }
-      {
+      {/* {
         (failedServerConnection)
           && (
             <S.FailConnect>
@@ -116,7 +116,7 @@ function Register() {
               Por favor, tente novamente, mais tarde.
             </S.FailConnect>
           )
-      }
+      } */}
     </S.Container>
   );
 }

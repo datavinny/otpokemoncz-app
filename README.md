@@ -1,6 +1,5 @@
 # 🚧 README em construção 🚧
-
-#otPokemon CZ
+# otPokemon CZ
 
 ## 📝 Introdução
 
