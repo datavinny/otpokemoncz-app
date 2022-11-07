@@ -9,10 +9,10 @@ function Routes() {
     <div>
       <main>
         <Switch>
-          <Route exact path="/" element={ <Navigate to="/login" /> } />
-          <Route exact path="/login" element={ <Login /> } />
-          <Route exact path="/register" element={ <Register /> } />
-          <Route exact path="/download" element={ <Download /> } />
+          <Route exact path="otpokemoncz-app/" element={ <Navigate to="/login" /> } />
+          <Route exact path="otpokemoncz-app/login" element={ <Login /> } />
+          <Route exact path="otpokemoncz-app/register" element={ <Register /> } />
+          <Route exact path="otpokemoncz-app/download" element={ <Download /> } />
         </Switch>
       </main>
     </div>
