@@ -38,12 +38,12 @@ Front-end:
 
 ### Front
 - [x] Login e Registro 
-- [ ] Download
+- [x] Download
 - [ ] VIP Shop
-- [ ] News
-- [ ] Houses
 - [ ] Mapa
+- [ ] News
 - [ ] Ranking
+- [ ] Houses
  
 ## 📌 Suporte
 Você não sabe codar, mas quer ajudar? <a href="">Doações</a>
