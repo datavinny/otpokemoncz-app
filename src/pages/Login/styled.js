@@ -6,7 +6,7 @@ export const Container = styled.section`
   align-items: center;
   padding-top:10%;
   margin: auto;
-  width: 50%;
+  width: 100%;
 `;
 
 export const Image = styled.div`
@@ -33,13 +33,17 @@ export const Label = styled.label`
   display: flex;
   flex-direction: column;
   padding:18px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
+  text-align: center;
 `;
 
 export const Input = styled.input`
   width: 90%;
   padding: 16px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 30px;
 `;
 
 export const ButtonLogin = styled.button`
@@ -67,5 +71,6 @@ export const ButtonRegister = styled.button`
 
 export const FailLogin = styled.p`
   color: red;
-  width: 68%;
+  width: 100%;
 `;
+

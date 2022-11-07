@@ -38,7 +38,7 @@ Front-end:
 
 ### Front
 - [x] Login e Registro 
-- [ ] Donwload
+- [ ] Download
 - [ ] VIP Shop
 - [ ] News
 - [ ] Houses

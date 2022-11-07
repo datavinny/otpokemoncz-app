@@ -6,7 +6,7 @@ export const Container = styled.main`
   align-items: center;
   margin: 0 auto;
   margin-top: 12%;
-  width: 50%;
+  width: 100%;
 `;
 
 export const Title = styled.h1`
@@ -27,13 +27,17 @@ export const Label = styled.label`
   display: flex;
   flex-direction: column;
   padding:18px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
+  text-align: center;
 `;
 
 export const Input = styled.input`
   width: 90%;
   padding: 16px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 30px;
 `;
 
 export const Button = styled.button`
