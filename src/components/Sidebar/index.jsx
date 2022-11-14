@@ -1,19 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { 
   FaTimes, 
   // FaHome, 
   // FaRegSun, 
-  // FaUserAlt,  
+  FaUserAlt,
   // FaRegFileAlt,
   // FaRegCalendarAlt,
   FaDownload,
   // FaMedal,
   FaShoppingBag,
   FaSun,
-} from 'react-icons/fa'
-import { Link } from 'react-router-dom';
+} from 'react-icons/fa';
 
-import SidebarItem from '../SidebarItem'
+import SidebarItem from '../SidebarItem';
 
 import * as S from './styles';
 
@@ -31,10 +31,18 @@ const Sidebar = ({ active }) => {
         {/* <Link to="/news"><SidebarItem Icon={FaRegFileAlt} Text="Atualizações" /></Link> */}
         {/* <Link to="/events"><SidebarItem Icon={FaRegCalendarAlt} Text="Eventos" /></Link> */}
         {/* <Link to="/ranking"><SidebarItem Icon={FaMedal} Text="Ranking" /></Link> */}
-        <Link to="/vip-shop"><SidebarItem Icon={FaShoppingBag} Text="VIP Shop" /></Link>
-        <Link to="/shinies"><SidebarItem Icon={FaSun} Text="Lista Shinies" /></Link>
-        <Link to="/download"><SidebarItem Icon={FaDownload} Text="Download" /></Link>
-        {/* <Link to="/account"><SidebarItem Icon={FaUserAlt} Text="Conta" /></Link> */}
+        <Link to="/vip-shop">
+          <SidebarItem Icon={FaShoppingBag} Text="VIP Shop" />
+        </Link>
+        <Link to="/shinies">
+          <SidebarItem Icon={FaSun} Text="Lista Shinies" />
+        </Link>
+        <Link to="/download">
+          <SidebarItem Icon={FaDownload} Text="Download" />
+        </Link>
+        <Link to="/account">
+          <SidebarItem Icon={FaUserAlt} Text="Conta" />
+        </Link>
         {/* <Link to="/settings"><SidebarItem Icon={FaRegSun} Text="Configurações" /></Link> */}
       </S.Content>
     </S.Container>

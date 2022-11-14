@@ -1,19 +1,12 @@
 import styled from 'styled-components';
-import { defaultTheme } from '../../global/theme';
-
-const BACKGROUND_COLOR = (props) => props.theme.body;
-const FONT_COLOR = (props) => props.theme.fontColor;
-const BUTTON_COLOR1 = defaultTheme.color.primario;
-const BUTTON_COLOR2 = defaultTheme.color.terciario;
 
 const media = {
   desktop: '@media(min-width: 992px)',
 }
 
 export const Container = styled.div`
-  background-color: ${BACKGROUND_COLOR};
-  color: ${FONT_COLOR};
-  // border: 1px solid green;
+  background: ${({ theme }) => theme.color.primario};
+  color: ${({ theme }) => theme.color.textLight};
   
   width: 100%;
   display: flex;
@@ -46,7 +39,7 @@ export const Container = styled.div`
 
   form {
     flex-flow: column wrap;
-    background: ${BACKGROUND_COLOR}; 
+    background: ${({ theme }) => theme.color.primario};
     label {
       display: flex;
       flex-flow: column wrap;
@@ -63,8 +56,8 @@ export const Container = styled.div`
       border-radius: 25px;
     }
     .loginBtn {
-      background: ${BUTTON_COLOR1};
-      color: ${FONT_COLOR};
+      background: ${({ theme }) => theme.color.secundario};
+      color: ${({ theme }) => theme.color.textLight};
       font-size: 20px;
       font-weight: bold;
       display: flex;
@@ -75,8 +68,8 @@ export const Container = styled.div`
       width: 90%;
     }
     .registerBtn {
-      background: ${BUTTON_COLOR2};
-      color: ${FONT_COLOR};
+      background: ${({ theme }) => theme.color.secundario};
+      color: ${({ theme }) => theme.color.textLight};
       display: flex;
       justify-content: center;
       border-radius: 8px;

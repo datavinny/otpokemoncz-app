@@ -1,27 +1,23 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import Provider from './provider';
-import MyContext from './context/MyContext';
 import Routes from './Routes';
 
-import GlobalStyles from "./global/theme";
-import { ligthTheme, darkTheme } from "./theme";
+import theme from './global/theme';
 
 function App() {
-  const { theme } = useContext(MyContext);
 
   useEffect(() => {
     document.title = "OTPokemon CZ"
  }, []);
 
   return (
-    <Provider>
-      <ThemeProvider theme={ theme === "light" ? ligthTheme : darkTheme}>
-        <GlobalStyles />
+    <ThemeProvider theme={theme}>
+      <Provider>
         <Routes />
-      </ThemeProvider>
-    </Provider>
+      </Provider>
+    </ThemeProvider>
   );
 }
 

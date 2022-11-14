@@ -1,16 +1,12 @@
 import styled from 'styled-components';
-// import { defaultTheme } from '../../global/theme';
-
-const BACKGROUND_COLOR = (props) => props.theme.body;
-const FONT_COLOR = (props) => props.theme.fontColor;
 
 const media = {
   desktop: '@media(min-width: 992px)',
 }
 
 export const Container = styled.div`
-  background-color: ${BACKGROUND_COLOR};
-  color: ${FONT_COLOR};
+  background: ${({ theme }) => theme.color.primario};
+  color: ${({ theme }) => theme.color.textLight};
 
   .main {
     flex-flow: column wrap;
@@ -21,7 +17,7 @@ export const Container = styled.div`
     table, th, td {
       font-size: 20px;
       text-align: center;
-      border: 1px solid darkblue;
+      border: 1px solid  ${({ theme }) => theme.color.secundario};
       width: 100%;
       ${media.desktop} {
         padding: 5px;

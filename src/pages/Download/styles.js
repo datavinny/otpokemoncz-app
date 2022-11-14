@@ -1,30 +1,29 @@
 import styled from 'styled-components';
-import { defaultTheme } from '../../global/theme';
-
-const BACKGROUND_COLOR = (props) => props.theme.body;
-const FONT_COLOR = (props) => props.theme.fontColor;
-const BUTTON_COLOR1 = defaultTheme.color.primario;
 
 const media = {
   desktop: '@media(min-width: 992px)',
 }
 
 export const Container = styled.div`
-  background-color: ${BACKGROUND_COLOR};
-  color: ${FONT_COLOR};
-  
-  width: 100%;
-  display: flex;
-  flex: 1;
-  flex-flow: column wrap;
-  align-items: center;
-  align-content: center;
-  padding: 0% 0% 25% 0%;
-  gap: 10px 0px;
+  background: ${({ theme }) => theme.color.primario};
+  color: ${({ theme }) => theme.color.textLight};
+  flex-grow: 1;
+  .main {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
+    height: 800px;
+    bottom: 30%;
+    padding: 0% 0% 0% 0%;
+    ul {
+      text-decoration: none;
+    }
 
-  ${media.desktop} {
-    heigth: 100%;
-    padding: 0% 0% 9% 0%;
+    ${media.desktop} {
+      height: 990px;
+    }
   }
 
   h1 {
@@ -49,20 +48,15 @@ export const Container = styled.div`
     color: white
   }
 
-  .main {
-    display: flex;
-    flex-flow: column wrap;
-  }
-
   .donwloadBtn {
-    background: ${BUTTON_COLOR1};
-    color: ${FONT_COLOR};
+    background: ${({ theme }) => theme.color.secundario};
+    color: ${({ theme }) => theme.color.textLight};
     font-size: 18px;
     display: flex;
     justify-content: center;
     border-radius: 8px;
     margin: 12px auto;
     padding: 18px;
-    width: 90%;
+    width: 100%;
   }
 `;

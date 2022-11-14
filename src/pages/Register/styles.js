@@ -1,18 +1,12 @@
 import styled from 'styled-components';
-import { defaultTheme } from '../../global/theme';
-
-const BACKGROUND_COLOR = (props) => props.theme.body;
-const FONT_COLOR = (props) => props.theme.fontColor;
-const BUTTON_COLOR1 = defaultTheme.color.primario;
 
 const media = {
   desktop: '@media(min-width: 992px)',
 }
 
 export const Container = styled.div`
-  background-color: ${BACKGROUND_COLOR};
-  color: ${FONT_COLOR};
-  // border: 1px solid green;
+  background: ${({ theme }) => theme.color.primario};
+  color: ${({ theme }) => theme.color.textLight};
   
   width: 100%;
   display: flex;
@@ -38,7 +32,7 @@ export const Container = styled.div`
   }
 
   form {
-    background: ${BACKGROUND_COLOR}; 
+    background: ${({ theme }) => theme.color.primario};
     display: flex;
     flex-flow: column wrap;
     label {
@@ -57,8 +51,8 @@ export const Container = styled.div`
       border-radius: 25px;
     }
     .registerBtn {
-      background: ${BUTTON_COLOR1};
-      color: ${FONT_COLOR};
+      background: ${({ theme }) => theme.color.secundario};
+      color: ${({ theme }) => theme.color.textLight};
       font-size: 18px;
       display: flex;
       justify-content: center;
