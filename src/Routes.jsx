@@ -10,6 +10,7 @@ function Routes() {
       <main>
         <Switch>
           <Route exact path="otpokemoncz-app/" element={ <Navigate to="/login" /> } />
+          <Route exact path="/" element={ <Navigate to="/login" /> } />
           <Route exact path="/login" element={ <Login /> } />
           <Route exact path="/register" element={ <Register /> } />
           <Route exact path="/download" element={ <Download /> } />
