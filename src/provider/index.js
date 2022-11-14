@@ -3,15 +3,19 @@ import PropTypes from 'prop-types';
 import MyContext from '../context/MyContext';
 
 export default function Provider({ children }) {
-  const [points, setPoints] = useState([]);
+  const [theme, setTheme] = useState("light");
 
   const context = useMemo(() => {
+    const themeToggler = () => {
+      theme === "light" ? setTheme("dark") : setTheme("light")
+    }
 
     return ({
-      points,
-      setPoints,
+      theme,
+      setTheme,
+      themeToggler,
     });
-  }, [points]);
+  }, [theme]);
 
   return (
     <MyContext.Provider value={ context }>

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import logo from '../../images/Logo.png';
 // import { login } from '../../services/api';
 
-import * as S from './styled';
+import * as S from './styles';
 
 const USERKEY = '@app-otpcz:user';
 
@@ -55,14 +55,12 @@ function Login() {
 
   return (
     <S.Container>
-      <S.Image>
-        <img src={ logo } width={ 300 } alt="Logo" />
-      </S.Image>
-      <S.Title>De fans para fans.</S.Title>
-      <S.Forms>
-        <S.Label htmlFor="input-username">
+      <img src={ logo } alt="Logo"  />
+      <h3>De fans para fans.</h3>
+      <form className="main">
+        <label htmlFor="input-username">
           Login
-          <S.Input
+          <input
             type="text"
             id="input-username"
             name="username"
@@ -70,10 +68,10 @@ function Login() {
             onChange={ ({ target }) => handleChange({ target }) }
             placeholder="username"
           />
-        </S.Label>
-        <S.Label htmlFor="input-password">
+        </label>
+        <label htmlFor="input-password">
           Senha
-          <S.Input
+          <input
             type="password"
             id="input-password"
             name="password"
@@ -81,28 +79,30 @@ function Login() {
             onChange={ ({ target }) => handleChange({ target }) }
             placeholder="******"
           />
-        </S.Label>
-        <S.ButtonLogin
+        </label>
+        <button
+          className="loginBtn"
           type="button"
           disabled={ isBtnDisabled }
           // onClick={ () => sendData() }
         >
           LOGIN
-        </S.ButtonLogin>
-        <S.ButtonRegister
+        </button>
+        <button
+          className="registerBtn"
           type="button"
           onClick={ () => navigate('/register') }
         >
           Ainda não tenho conta
-        </S.ButtonRegister>
-      </S.Forms>
+        </button>
+      </form>
       {/* {
         (failedServerConnection)
           && (
-            <S.FailLogin>
+            <div>
               Nome de usuario ou a senha não estão corretos.
               Por favor, tente novamente.
-            </S.FailLogin>
+            </div>
           )
       } */}
     </S.Container>
