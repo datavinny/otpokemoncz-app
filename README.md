@@ -37,10 +37,10 @@ Front-end:
 - [x] Download
 - [x] Lista de Shinys
 - [x] VIP Shop (falta implementar conexão com o backend)
-- [] Mapa
-- [] News
-- [] Ranking
-- [] Houses
+- [ ] Mapa
+- [ ] News
+- [ ] Ranking
+- [ ] Houses
  
 ## 📌 Suporte
 <!--- Você não sabe codar, mas quer ajudar? <a href="">Doações</a> -->
