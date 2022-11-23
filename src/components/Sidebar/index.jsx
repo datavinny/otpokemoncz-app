@@ -34,8 +34,8 @@ const Sidebar = ({ active }) => {
         <Link to="/vip-shop">
           <SidebarItem Icon={FaShoppingBag} Text="VIP Shop" />
         </Link>
-        <Link to="/shinies">
-          <SidebarItem Icon={FaSun} Text="Lista Shinies" />
+        <Link to="/shinys">
+          <SidebarItem Icon={FaSun} Text="Lista Shinys" />
         </Link>
         <Link to="/download">
           <SidebarItem Icon={FaDownload} Text="Download" />

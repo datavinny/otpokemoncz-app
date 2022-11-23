@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
 
 import Header from '../../components/Header';
-import data from '../../utils/lista_shinies.json';
+import data from '../../utils/lista_shinys.json';
 
 import * as S from './styles';
 
-function Shinies () {
-  const [shinies, setShinies] = useState([]);
+function Shinys () {
+  const [shinys, setShinys] = useState([]);
   // const [sortPkm, setSortPkm] = useState("");
 
   useEffect(() => {
     const result = data.sort((a, b) => a.quant > b.quant ? 1 : -1);
-    setShinies(result);
+    setShinys(result);
     // if (sortPkm === "sortByName") {
     //   setShinies(backupData.sort((a, b) => a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1));
     // }
@@ -47,7 +47,7 @@ function Shinies () {
               </tr>
             </thead>
             <tbody>
-            {shinies && shinies.map((pkm, index) => {
+            {shinys && shinys.map((pkm, index) => {
               return (
                 <tr key={index}>
                   <td>{pkm.name}</td>
@@ -62,4 +62,4 @@ function Shinies () {
   );
 }
 
-export default Shinies;
+export default Shinys;
