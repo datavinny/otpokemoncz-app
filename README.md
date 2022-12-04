@@ -1,9 +1,11 @@
 # 🚧 README em construção 🚧
-# otPokemon CZ
+# otPokemon CZ (congelado)
 
 ## 📝 Introdução
 
-App desenvolvido para o do jogo otPokemon CZ.
+App desenvolvido para o do jogo otPokemon CZ. 
+
+CONGELADO: o projeto parado, sem previsão de volta.
 
 <details>
   <summary>
