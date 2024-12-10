@@ -1,20 +1,21 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-import theme from './global/theme';
-import Routes from './Routes';
+
 import Provider from './provider';
+import Routes from './Routes';
+
+import theme from './global/theme';
 
 function App() {
+
   useEffect(() => {
-    document.title = "otPokemon Cz"
+    document.title = "OTPokemon CZ"
  }, []);
+
   return (
-    <ThemeProvider theme={ theme }>
+    <ThemeProvider theme={theme}>
       <Provider>
-        <BrowserRouter>
-          <Routes />
-        </BrowserRouter>
+        <Routes />
       </Provider>
     </ThemeProvider>
   );

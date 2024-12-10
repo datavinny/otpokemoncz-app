@@ -1,0 +1,15 @@
+[
+  {"desc": "VIP - 30 dias", "price": 6, "cmd": "!buyvip3"},
+  {"desc": "Shiny Stone", "price": 5, "cmd": "!buyshstone"},
+  {"desc": "Boost Stone", "price": 4, "cmd": "!buyboost"},
+  {"desc": "Bike Box", "price": 5, "cmd": "!buybikebox"},
+  {"desc": "Moto Red", "price": 10, "cmd": "!buymotored"},
+  {"desc": "Ditto", "price": 6, "cmd": "!buyditto"},
+  {"desc": "Addon Box", "price": 4, "cmd": "!buyaddonbox"},
+  {"desc": "Old Addon Box", "price": 15, "cmd": "!buyoldaddonbox"},
+  {"desc": "Saitama Outfit", "price": 25, "cmd": "!buyfit3"},
+  {"desc": "Majin buu Outfit", "price": 25, "cmd": "!buyfit4"},
+  {"desc": "Minecraft Outfit", "price": 15, "cmd": "!buyfit5"}
+]
+
+	

@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import MyContext from '../context/MyContext';
 
 export default function Provider({ children }) {
-  const [points, setPoints] = useState([]);
-
+  const [points, setPoints] = useState(0);
   const context = useMemo(() => {
 
     return ({

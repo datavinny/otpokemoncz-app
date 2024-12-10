@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 // import { register } from '../../services/api';
 
-import * as S from './styled';
+import * as S from './styles';
 
 // const USERKEY = '@app-otpcz:user';
 
@@ -17,6 +17,10 @@ function Register() {
   // const [failedServerConnection, setFailedServerConnection] = useState(false);
 
   const navigate = useNavigate();
+
+  function handleChange({ target: { name, value } }) {
+    setData((state) => ({ ...state, [name]: value }));
+  }
 
   useEffect(() => {
     const { email, password, username } = data;
@@ -38,10 +42,6 @@ function Register() {
     if (email === '' || password === '' || username === '') setFailedTryLogin(false);
   }, [data]);
 
-  function handleChange({ target: { username, value } }) {
-    setData((state) => ({ ...state, [username]: value }));
-  }
-
   async function sendData() {
     // const result = await register(data);
     // if (!result) {
@@ -54,11 +54,11 @@ function Register() {
 
   return (
     <S.Container>
-      <S.Title>Cadastro</S.Title>
-      <S.Forms>
-        <S.Label htmlFor="input-username">
+      <h1>Cadastro</h1>
+      <form className="main">
+        <label htmlFor="input-username">
           Nome de usuario
-          <S.Input
+          <input
             type="text"
             id="input-username"
             name="username"
@@ -66,10 +66,10 @@ function Register() {
             onChange={ ({ target }) => handleChange({ target }) }
             placeholder="username"
           />
-        </S.Label>
-        <S.Label htmlFor="input-email">
+        </label>
+        <label htmlFor="input-email">
           Email
-          <S.Input
+          <input
             type="email"
             id="input-email"
             name="email"
@@ -77,10 +77,10 @@ function Register() {
             onChange={ ({ target }) => handleChange({ target }) }
             placeholder="seu-email@site.com.br"
           />
-        </S.Label>
-        <S.Label htmlFor="input-password">
+        </label>
+        <label htmlFor="input-password">
           Senha
-          <S.Input
+          <input
             type="password"
             id="input-password"
             name="password"
@@ -89,23 +89,24 @@ function Register() {
             placeholder="******"
             data-testid="common_register__input-password"
           />
-        </S.Label>
-        <S.Button
+        </label>
+        <button
+          className="registerBtn"
           type="button"
           disabled={ isBtnDisabled }
           onClick={ () => sendData() }
           data-testid="common_register__button-register"
         >
           CADASTRAR
-        </S.Button>
-      </S.Forms>
+        </button>
+      </form>
       {
         (failedTryLogin)
           && (
-            <S.Validation>
-              O endereço de e-mail, senha ou nome não estão corretos.
+            <p>
+              O endereço de e-mail, senha ou nome estão em um formato invalido.
               Por favor, tente novamente.
-            </S.Validation>
+            </p>
           )
       }
       {/* {
